@@ -1,29 +1,32 @@
-# Veri Bilimi Eğitimi Notları
+# Veri Bilimi Eğitimi - 1. Ders Notları (07.10.2024)
 
-## 1. Ders: Yapay Zeka ve Veri Bilimi (07.10.2024)
+## Yapay Zeka ve Veri Bilimi
 
-### Yapay Zeka ve Veri Bilimi Kavramları
-- **Yapay Zeka (AI):** İnsan gibi düşünebilen ve hareket edebilen makineler yaratmayı hedefleyen bir alan.
+- **Yapay Zeka:** İnsan gibi düşünebilen ve hareket edebilen makineler yaratmayı hedefleyen bir alan.
 - **Veri Bilimi:** Verilerden anlamlı bilgiler çıkarmak için kullanılan disiplinler arası bir alan.
-- **Makine Öğrenmesi (ML):** Bilgisayarların açıkça programlanmadan verilerden öğrenmesini sağlayan bir yapay zeka alt kümesi.
-- **Derin Öğrenme (Deep Learning):** Çok katmanlı yapay sinir ağlarını kullanarak verilerden karmaşık örüntüler çıkaran bir makine öğrenmesi alt kümesi.
+- **Makine Öğrenmesi:** Bilgisayarların açıkça programlanmadan verilerden öğrenmesini sağlayan bir yapay zeka alt kümesi.
+- **Derin Öğrenme:** Çok katmanlı yapay sinir ağlarını kullanarak verilerden karmaşık örüntüler çıkaran bir makine öğrenmesi alt kümesi.
 
-### Yapay Zeka Modelleri
+## Yapay Zeka Modelleri
+
 - **Parametreler:** Yapay zeka modellerinin davranışını kontrol eden ayarlar.
 - **Eğitim:** Veriler kullanılarak modelin parametrelerinin ayarlanması süreci.
 - **Amaç:** İnsan zekasına benzer şekilde verileri analiz edebilen, tahminlerde bulunabilen ve kararlar alabilen modeller geliştirmek.
 
-### Aktivasyon Fonksiyonları
+## Aktivasyon Fonksiyonları
+
 - **ReLU (Rectified Linear Unit):** Negatif değerleri sıfırlayan, pozitif değerleri olduğu gibi bırakan bir aktivasyon fonksiyonu.
 - **Sigmoid:** Çıktıyı 0 ile 1 arasında bir değere sıkıştıran bir aktivasyon fonksiyonu.
 - **Softmax:** Çok sınıflı sınıflandırma problemlerinde çıktıları olasılıklara dönüştüren bir aktivasyon fonksiyonu.
 
-### Veri Analizi
+## Veri Analizi
+
 - **Örüntü Bulma:** Verilerdeki gizli örüntüleri ve ilişkileri keşfetme.
 - **Anlama:** Verilerin ne anlama geldiğini ve nasıl yorumlanacağını anlama.
 - **Tahmin:** Geçmiş verilere dayanarak gelecekteki olayları veya değerleri tahmin etme.
 
-### Araçlar ve Kaynaklar
+## Araçlar ve Kaynaklar
+
 - **Jupyter Notebook:** Veri analizi ve makine öğrenmesi için popüler bir etkileşimli ortam.
 - **VS Code:** Kod yazmak ve hata ayıklamak için güçlü bir kod düzenleyici.
 - **Geriye Yayılım (Backpropagation):** Yapay sinir ağlarında hataları geriye doğru yayarak ağırlıkları güncelleme algoritması.
@@ -32,20 +35,20 @@
 - **Hugging Face:** Doğal dil işleme modelleri için bir platform.
 - **Kaggle:** Veri bilimi yarışmaları ve veri setleri için bir platform.
 
----
+# Veri Bilimi Eğitimi - 2. Ders Notları
 
-## 2. Ders: Aktivasyon Fonksiyonları ve Hata Fonksiyonları
+## Aktivasyon Fonksiyonları
 
-### Aktivasyon Fonksiyonları
 - **ReLU (Rectified Linear Unit):**
   - Girdi değeri 0'dan küçükse 0, 0'dan büyükse girdi değerinin kendisini döndüren bir aktivasyon fonksiyonudur.
   - Yapay sinir ağlarında yaygın olarak kullanılır ve doğrusal olmayanlığı modele dahil etmeye yardımcı olur.
 - **Sigmoid:**
   - Girdi değerini 0 ile 1 arasında bir değere dönüştüren bir aktivasyon fonksiyonudur.
-  - Formülü: \( S(x) = \frac{1}{1 + e^{-x}} \)
+  - Formülü: S(x) = 1 / (1 + e^-x)
   - Genellikle ikili sınıflandırma problemlerinde kullanılır.
 
-### Hata Fonksiyonları (Loss Functions)
+## Hata Fonksiyonları (Loss Functions)
+
 - **Mean Squared Error (MSE):**
   - Modelin tahminleri ile gerçek değerler arasındaki farkın karesinin ortalamasını hesaplayan bir hata fonksiyonudur.
   - Regresyon problemlerinde yaygın olarak kullanılır.
@@ -58,123 +61,560 @@
   - Modelin hatalarını en aza indirgemek için kullanılır.
   - Modelin eğitimi sırasında, loss fonksiyonunun değeri azaltılmaya çalışılır.
 
----
+## Programlama ve Araçlar
 
-## 3. Ders: Veri Tipleri ve Yapıları
+- **Python:** Veri bilimi ve makine öğrenmesi için popüler bir programlama dilidir.
+- **VS Code:** Kod yazmak ve hata ayıklamak için güçlü bir kod düzenleyicisidir.
+- **GitHub:** Kod paylaşımı ve versiyon kontrolü için bir platformdur.
+- **Jupyter Notebook:** Veri analizi ve makine öğrenmesi için etkileşimli bir ortamdır.
+- **Terminal:** Komut satırı arayüzüdür.
+- **Temel Aritmetik, Değişkenler, Koşullu İfadeler, Döngüler, Hata Ayıklama, Sınıf Tanımlama:** Python programlama dilinin temel yapılarıdır.
 
-### Veri Tipleri
-- **Tuple (Demet):** Sıralı ve değiştirilemez veri koleksiyonudur. Örneğin, `(elma, armut, muz)`.
-- **Set (Küme):** Sırasız ve tekrarlayan elemanları içermeyen veri koleksiyonudur. Örneğin, `{elma, armut, muz}`.
-- **Dictionary (Sözlük):** Anahtar-değer çiftlerinden oluşan veri koleksiyonudur. Örneğin, `{"isim": "Hatice", "yas": 30}`.
+## Veri ve Özellikler
 
-### Döngüler ve Koşullar
-- **For Döngüsü:** Belirli bir sayıda tekrarlamak için kullanılır. Örneğin, `for i in range(1000): print("Beni Affet!")`.
-- **While Döngüsü:** Belirli bir koşul doğru olduğu sürece tekrarlamak için kullanılır. Örneğin, `while i < 1000: print("Beni Affet!")`.
-- **Koşullar (if-else):** Bir koşul doğruysa bir kod bloğunu, yanlışsa başka bir kod bloğunu çalıştırır.
+- **Feature (Özellik):** Veri setindeki bir sütun veya değişkendir.
+- **Column (Sütun):** Veri setindeki dikey bir yapıdır.
+- **Dimension (Boyut):** Veri setindeki özelliklerin sayısıdır.
+- **Lineer Regresyon:** Bağımlı ve bağımsız değişkenler arasındaki doğrusal ilişkiyi modelleyen bir algoritmadır.
 
----
+## Ödev:
 
-## 4. Ders: Makine Öğrenmesi Problemleri ve Türleri
+- Terminal kullanımını öğrenin.
+- Lineer regresyon için örnek bir veri seti bulun.
 
-### Makine Öğrenmesi Problemleri
-- **Regresyon:** Geçmiş verilere dayanarak gelecekteki değerleri tahmin etmeyi amaçlayan bir makine öğrenmesi problemi.
-- **Sınıflandırma:** Verileri belirli kategorilere veya sınıflara ayırmayı amaçlayan bir makine öğrenmesi problemi.
-- **Kümeleme:** Verileri benzerliklerine göre gruplara ayırmayı amaçlayan bir makine öğrenmesi problemi.
+# Veri Bilimi Eğitimi - 3. Ders Notları
 
-### Gözetimli ve Gözetimsiz Öğrenme
+## Veri Tipleri ve Yapıları
+
+- **Tuple (Demet):** Sıralı ve değiştirilemez veri koleksiyonudur. Örneğin, (elma, armut, muz).
+- **Set (Küme):** Sırasız ve tekrarlayan elemanları içermeyen veri koleksiyonudur. Örneğin, {elma, armut, muz}.
+- **Dictionary (Sözlük):** Anahtar-değer çiftlerinden oluşan veri koleksiyonudur. Örneğin, {isim: Hatice, yas: 30}.
+- **Liste, Küme ve Sözlük Kullanımı:**
+  - Listeler, sıralı verileri depolamak için kullanılır.
+  - Kümeler, benzersiz elemanları depolamak için kullanılır.
+  - Sözlükler, anahtar-değer çiftlerini depolamak için kullanılır.
+
+## Döngüler ve Koşullar
+
+- **Döngüler:** Belirli bir kod bloğunu tekrar tekrar çalıştırmak için kullanılır.
+  - **For Döngüsü:** Belirli bir sayıda tekrarlamak için kullanılır. Örneğin, `for i in range(1000): print("Beni Affet!")` ifadesi, "Beni Affet!" yazısını 1000 kere yazdırır.
+  - **While Döngüsü:** Belirli bir koşul doğru olduğu sürece tekrarlamak için kullanılır. Örneğin, `while i < 1000: print("Beni Affet!")` ifadesi, i değeri 1000'den küçük olduğu sürece "Beni Affet!" yazısını yazdırır.
+- **Koşullar:** Belirli bir koşul doğruysa belirli bir kod bloğunu çalıştırmak için kullanılır.
+  - **if-else:** Bir koşul doğruysa bir kod bloğunu, yanlışsa başka bir kod bloğunu çalıştırır. Örneğin, `if len(isim) < 5: print("isim 5 karakterde küçük") else: print("İsim 5 karakterden küçük değil")` ifadesi, isim değişkeninin uzunluğu 5 karakterden küçükse "isim 5 karakterde küçük" yazısını, değilse "İsim 5 karakterden küçük değil" yazısını yazdırır.
+  - **continue:** Döngünün mevcut adımını atlar ve bir sonraki adıma geçer.
+  - **break:** Döngüyü sonlandırır.
+
+## Fonksiyonlar
+
+- **Fonksiyon Tanımlama:** Belirli bir görevi yerine getiren kod bloklarıdır. Örneğin, `def km_tahmini(yas): return a * yas + b` ifadesi, `km_tahmini` adında bir fonksiyon tanımlar ve bu fonksiyon, yaş değerini alarak `a * yas + b` formülünü hesaplar ve sonucu döndürür.
+
+## Operatörler
+
+- **Operatörler:** Değişkenler ve değerler üzerinde işlem yapmak için kullanılır.
+  - **Atama Operatörü (=):** Bir değişkene değer atamak için kullanılır.
+  - **Eşitlik Operatörü (==):** İki değerin eşit olup olmadığını kontrol etmek için kullanılır.
+  - **Mod Operatörü (%):** Bölme işleminden kalanı bulmak için kullanılır.
+  - **Eşit Değil Operatörü (!=):** İki değerin eşit olmadığını kontrol etmek için kullanılır.
+  - **Mantıksal Operatörler (not, or, and):** Koşulları birleştirmek için kullanılır.
+
+## Diğer Konular
+
+- **Ölü Kod:** Hiçbir zaman çalışmayacak kod bloklarıdır.
+- **Temel Ölçü:** Bir modelin başarısını değerlendirmek için kullanılan ölçütlerdir.
+- **Fine-tuning:** Eğitilmiş bir modeli yeni bir göreve uyarlamak için yapılan ince ayar işlemidir.
+- **Lojistik Regresyon:** İkili sınıflandırma problemlerinde kullanılan bir algoritmadır.
+
+# Veri Bilimi Eğitimi - 4. Ders Notları
+
+## Makine Öğrenmesi Problemleri ve Türleri
+
+- **Regresyon:** Geçmiş verilere dayanarak gelecekteki değerleri tahmin etmeyi amaçlayan bir makine öğrenmesi problemidir.
+- **Sınıflandırma:** Verileri belirli kategorilere veya sınıflara ayırmayı amaçlayan bir makine öğrenmesi problemidir.
+- **Kümeleme:** Verileri benzerliklerine göre gruplara ayırmayı amaçlayan bir makine öğrenmesi problemidir.
+- **Problem Uygunluğu:** Her makine öğrenmesi problemi için uygun model türünü seçmek önemlidir. Örneğin, regresyon problemleri için regresyon modelleri, sınıflandırma problemleri için sınıflandırma modelleri ve kümeleme problemleri için kümeleme modelleri kullanılır.
+
+## Ödev:
+
+- Çok özellikli (feature) veriler bulun.
+
+## Gözetimli ve Gözetimsiz Öğrenme
+
 - **Gözetimli Öğrenme (Supervised Learning):** Etiketlenmiş veri kümeleri kullanılarak modelin eğitildiği bir makine öğrenmesi türüdür.
 - **Gözetimsiz Öğrenme (Unsupervised Learning):** Etiketlenmemiş veri kümeleri kullanılarak modelin eğitildiği bir makine öğrenmesi türüdür.
 
----
+## K-Means Algoritması
 
-## 5. Ders: Veri Bulma ve Oluşturma
+- **K-Means:** Verileri kümelere ayırmak için kullanılan bir gözetimsiz öğrenme algoritmasıdır.
+- **Adımlar:**
+  1. Rastgele k merkez noktası seçilir.
+  2. Her veri noktası en yakın merkez noktasına atanır.
+  3. Her küme için yeni merkez noktaları hesaplanır.
+  4. 1. ve 3. adımlar, kümeler sabitlenene kadar tekrarlanır.
 
-### Veri Bulma ve Oluşturma
+## Örnek:
+
+- Hatice'nin verileri kullanılarak K-Means algoritması uygulanabilir.
+- Veri setindeki x ve y sütunlarının dengelenmesi önemlidir.
+- Kümeleme işleminden sonra sınıflandırma yapılabilir.
+
+## Sınıflandırma
+
+- **Sınıflandırma:** Verileri belirli kategorilere veya sınıflara ayırmayı amaçlayan bir makine öğrenmesi problemidir.
+- **Veri Uygunluğu:** Sınıflandırma için uygun veriler bulunmalıdır. Örneğin, film, araç veya müzik listeleri sınıflandırılabilir.
+- **Veri İnceleme:** Sınıflandırma yapmadan önce veriler dikkatlice incelenmelidir.
+
+## Model Tanımlama
+
+- **Model Tanımlama:** Eğitilen modelin parametreleri ve özellikleri açıklanmalıdır. Örneğin, "Benim modelim KMeans kümeleri örneğin 5, merkezleri 150, 110... Eğitildi" gibi bir açıklama yapılabilir.
+
+# Veri Bilimi Eğitimi - 5. Ders Notları
+
+## Veri Bulma ve Oluşturma
+
 - **Hazır Veri Setleri:** Veri bilimi projelerinde hazır veri setleri kullanmak yaygın olsa da, projeye özgü veriler toplamak ve oluşturmak daha etkili sonuçlar verebilir.
-- **Duygu Analizi:** Metin verilerindeki duygu durumunu (olumlu veya olumsuz) anlamak için, metnin başlangıç ve son kısımlarındaki kelimeler incelenebilir.
-- **Etiketli Veri:** Makine öğrenmesi modellerini eğitmek için etiketlenmiş veri kullanmak önemlidir.
+- **Örnek:** Müşteri dönüşüm oranlarını (olumlu veya olumsuz) tahmin etmek için bir makine öğrenmesi modeli oluşturulabilir. Bu model için, müşteri geri bildirimleri, satın alma geçmişi, demografik bilgiler gibi veriler kullanılabilir.
+- **Duygu Analizi:** Metin verilerindeki duygu durumunu (olumlu veya olumsuz) anlamak için, metnin başlangıç ve son kısımlarındaki kelimeler incelenebilir. Kelimeler arasındaki ilişkiler, metnin genel duygu durumunu belirlemek için kullanılabilir.
+- **Etiketli Veri:** Makine öğrenmesi modellerini eğitmek için etiketlenmiş veri kullanmak önemlidir. Etiketli veri, modelin doğru tahminler yapmasını sağlar.
+- **Patern Tanıma:** Hacimli verilerde patern (örüntü) tanıma, verilerdeki gizli ilişkileri ve eğilimleri ortaya çıkarabilir.
 
----
+## Araçlar ve Teknikler
+- **Regex (Regular Expression):** Metin verilerinde belirli kalıpları bulmak ve eşleştirmek için kullanılan bir tekniktir.
+- **Figma:** Tasarım ve prototipleme için kullanılan bir araçtır.
+- **HTML (Hyper Text Markup Language):** Web sayfalarını oluşturmak için kullanılan bir işaretleme dilidir.
+- **GET Metodu:** İnternet üzerinden veri almak için kullanılan bir HTTP metodudur.
+- **Developer Tools:** Web sayfalarının kodlarını ve yapısını incelemek için kullanılan tarayıcı araçlarıdır.
+- **cURL:** Komut satırından internet üzerinden veri göndermek ve almak için kullanılan bir araçtır.
+- **JSON (JavaScript Object Notation):** Verileri depolamak ve iletmek için kullanılan bir veri formatıdır.
+- **UTF-8:** Türkçe karakterleri destekleyen bir karakter kodlama sistemidir.
 
-## 6. Ders: Sürekli Öğrenme ve Yapay Zeka Modelleri
+# Veri Bilimi Eğitimi - 6. Ders Notları
 
-### Sürekli Öğrenme
+## Sürekli Öğrenme
+
 - **Öğrenmenin Önemi:** Veri bilimi alanındaki hızlı gelişmeler nedeniyle, sürekli öğrenme ve yeni bilgileri takip etme önemlidir.
 - **Hedef:** Veri biliminin farklı alanlarında uzmanlaşmak ve derinlemesine bilgi sahibi olmak.
 
-### Yapay Zeka Modelleri
+## Görev:
+
+- Veri bilimi ile ilgili tüm dersleri ve konuları inceleyin.
+- Her konu hakkında temel düzeyde bilgi edinin (%5-10).
+- Karşılaşılan sorunlar hakkında çözüm fikirleri geliştirin.
+- Ders notlarını en az iki kez okuyun.
+- Her cümleyi ve konuyu açıklayan kısa notlar alın.
+
+## Yapay Zeka Modelleri
+
 - **Perplexity:** Yapay zeka tarafından üretilen metinlerin kalitesini ölçen bir metrik.
 - **Bard:** Google tarafından geliştirilen büyük bir dil modeli.
 - **Claude:** Anthropic tarafından geliştirilen bir yapay zeka sohbet robotu.
 - **Gemini:** Google tarafından geliştirilen bir multimodal yapay zeka modeli.
+- **Sider:** Yapay zeka destekli bir kod tamamlama aracı.
+- **NotebookLM:** Google tarafından geliştirilen, not alma ve bilgi yönetimi için bir yapay zeka aracı.
+- **AI Studio:** Baidu tarafından geliştirilen bir yapay zeka geliştirme platformu.
 
----
+## Sınıflandırma Algoritmaları
 
-## 7. Ders: Veri Oluşturma ve Kalitesi
+- **Sınıflandırma:** Verileri belirli kategorilere veya sınıflara ayırmak için kullanılan bir makine öğrenmesi tekniği.
+- **GPT ile Çalışma:** GPT gibi büyük dil modellerine sınıflandırma algoritmaları hakkında sorular sorarak bilgi edinilebilir.
 
-### Veri Oluşturma
+## Örnekler ve Uygulamalar
+
+- **Müşteri Segmentasyonu:** Müşterileri benzer özelliklerine göre gruplara ayırmak için kullanılan bir sınıflandırma uygulaması.
+- **Gerçek Hayat Örnekleri:** Sınıflandırma algoritmaları, spam filtreleme, hastalık teşhisi, kredi riski değerlendirmesi gibi birçok alanda kullanılabilir.
+
+## Scaler ve Encoder
+
+- **Scaler:** Verileri belirli bir aralığa ölçeklendirmek için kullanılan bir teknik.
+- **Encoder:** Kategorik verileri sayısal verilere dönüştürmek için kullanılan bir teknik.
+
+## Doğruluk Metrikleri
+
+- **Accuracy:** Modelin doğru tahminlerinin oranı.
+- **Recall:** Modelin doğru pozitif tahminlerinin oranı.
+- **Precision:** Modelin pozitif tahminlerinin ne kadarının doğru olduğu oranı.
+- **F1-Score:** Precision ve recall değerlerinin harmonik ortalaması.
+
+## Lojistik Regresyon ve Decision Tree
+
+- **Lojistik Regresyon:** İkili sınıflandırma problemleri için kullanılan bir algoritma.
+- **Decision Tree:** Verileri ağaç yapısı şeklinde sınıflandırmak için kullanılan bir algoritma.
+- **Veri Boyutu ve Doğruluk:** Lojistik regresyonun doğruluğu, veri boyutu arttıkça artma eğilimindedir, ancak decision tree'nin doğruluğu genellikle sabit kalır.
+
+# Veri Bilimi Eğitimi - 7. Ders Notları
+
+## Veri Oluşturma ve Kalitesi
+
 - **Random Data:** Gerçek dünya verilerine benzer özellikler taşıyan, sentetik olarak üretilmiş verilerdir.
+- **Benzerlik:** Random data, gerçek dünya verilerine istatistiksel olarak benzeyecek şekilde üretilir.
 - **Sentetik Data:** Belirli bir amaca yönelik olarak, anlamlı ilişkiler içerecek şekilde üretilmiş verilerdir.
-
-### Veri Kalitesi
 - **Data Kalitesi:** Kaliteli veriler, güvenilir ve doğru sonuçlar elde etmek için önemlidir.
 - **Model Kalitesi:** Kullanılan modelin kalitesi de veri kalitesini etkiler.
 
----
+## Veri Setleri ve Platformlar
 
-## 8. Ders: Yapay Sinir Ağları
+- **Kaggle:** Veri bilimi yarışmaları ve veri setleri için popüler bir platformdur.
+- **Şarap Kalitesi Veri Seti:** Kaggle'da bulunan ve şarapların kalitesini tahmin etmek için kullanılabilecek bir veri setidir.
+- **Top 10 ML Datasets:** Makine öğrenmesi projeleri için popüler veri setlerinin bir listesidir.
+- **Churn Analysis:** Müşteri kaybını tahmin etmek için kullanılan bir analiz türüdür.
+- **Customer Segmentation:** Müşterileri benzer özelliklerine göre gruplara ayırmak için kullanılan bir tekniktir.
+- **Binning:** Verileri belirli aralıklara bölmek için kullanılan bir tekniktir.
+- **Outlier:** Veri setindeki diğer değerlerden önemli ölçüde farklı olan değerlerdir.
+- **KNN (K-Nearest Neighbors):** En yakın komşuluk algoritması, bir veri noktasını en yakın komşularına göre sınıflandırmak için kullanılan bir algoritmadır.
+- **Random Forest:** Rastgele orman algoritması, birden fazla karar ağacını kullanarak sınıflandırma veya regresyon yapmak için kullanılan bir algoritmadır.
+- **Confusion Matrix:** Karışıklık matrisi, bir sınıflandırma modelinin performansını değerlendirmek için kullanılan bir tablodur.
+- **SVM (Support Vector Machine):** Destek vektör makinesi algoritması, verileri sınıflandırmak için kullanılan bir algoritmadır.
+- **Kerneling:** SVM algoritmasında kullanılan bir tekniktir.
+- **Lineer Kernel, Polynomial Kernel, RBF, Sigmoid:** Farklı kernel türleridir.
+- **Hiyerarşik Kümeleme:** Verileri hiyerarşik bir şekilde kümelere ayırmak için kullanılan bir tekniktir.
+- **Aglomerative:** Hiyerarşik kümelemenin bir türüdür.
+- **Manhattan:** Bir uzaklık ölçüsüdür.
+- **Machine Learning Essentials:** Kaggle'da bulunan bir makine öğrenmesi kursu.
+- **Smartone.ai:** Veri setleri hakkında bilgi edinmek için bir platform.
+- **Wikipedia Datasets for ML:** Wikipedia'da bulunan makine öğrenmesi veri setleri.
 
-### Yapay Sinir Ağları (YSA)
-- **Giriş:** Yapay sinir ağları, insan beyninin bilgi işleme yapısını taklit eden bir hesaplama modelidir.
-- **Temel Yapı:** YSA'lar genellikle girdi katmanı, gizli katmanlar ve çıktı katmanından oluşur.
-- **Çalışma Prensibi:** İleri besleme (forward propagation) ve geri yayılım (backpropagation) ile çalışır.
+## Hugging Face
 
----
+- **Hugging Face:** Doğal dil işleme modelleri ve veri setleri için bir platformdur.
+- **Veri Yükleme:** Hugging Face'e veri setleri yüklenebilir.
+- **Veri Çekme:** Hugging Face'ten veri setleri çekilebilir.
+- **Pandas:** Veri analizi ve işleme için kullanılan bir Python kütüphanesidir.
+- **load_datasets:** Hugging Face veri setlerini yüklemek için kullanılan bir fonksiyondur.
+- **push_to_hub:** Hugging Face'e veri seti yüklemek için kullanılan bir fonksiyondur.
+- **pd.read_parquet:** Parquet formatındaki verileri okumak için kullanılan bir fonksiyondur.
 
-## 9. Ders: Backpropagation ve TensorFlow
+## KNN ve Model Parametreleri
 
-### Backpropagation
-- **Backpropagation:** Sinir ağlarında öğrenme için kullanılan bir algoritmadır. Modelin tahmini ile gerçek değer arasındaki farkı hesaplar ve bu hatayı kullanarak modelin parametrelerini günceller.
+- **KNN:** En yakın komşuluk algoritmasıdır.
+- **Model = Formül + Parametre:** Bir makine öğrenmesi modeli, bir formül ve parametrelerden oluşur.
+- **custcat:** Bir KNN modelinin parametresi olabilir.
+- **Tenure, Age:** Bir veri setindeki özellikler olabilir.
+- **Manhattan, Öklit:** Uzaklık ölçüleridir.
+- **Minkowski:** Bir uzaklık ölçüsü ailesidir.
 
-### TensorFlow
-- **TensorFlow:** Google tarafından geliştirilen açık kaynaklı bir derin öğrenme kütüphanesidir.
-- **Model Kaydetme ve Yükleme:** Eğitilen bir modeli kaydetmek ve daha sonra tekrar kullanmak için kullanılır.
+## Algoritmalar ve Teknikler
 
----
+- **XGBoost:** Gradient boosting algoritmasının bir türüdür.
+- **SVM:** Destek vektör makinesi algoritmasıdır.
+- **Random Forest:** Rastgele orman algoritmasıdır.
 
-## 10. Ders: CNN (Evrişimli Sinir Ağları)
+# Veri Bilimi - 8. Ders: Yapay Sinir Ağları
 
-### CNN (Evrişimli Sinir Ağları)
-- **Görüntü Ölçekleme:** Görüntülerin boyutunu küçültmek veya büyütmek için kullanılır.
-- **Min. Pooling:** En küçük değerleri seçerek görüntünün boyutunu küçültür.
-- **Büyütme:** Görüntüyü büyütmek için kopyala-yapıştır yöntemi kullanılabilir.
+## 1. Giriş
 
----
+- Yapay sinir ağları (YSA), insan beyninin bilgi işleme yapısını taklit eden bir hesaplama modelidir.
+- YSA'lar, birbirine bağlı birçok işlem biriminden (nöron) oluşur ve bu birimler arasındaki bağlantılar ağırlıklarla temsil edilir.
+- Bu ağırlıklar, ağın öğrenme sürecinde ayarlanır ve ağın girdi verilerine nasıl tepki vereceğini belirler.
 
-## 11. Ders: Proje İncelemeleri ve Kayıp Fonksiyonu
+## 2. Temel Yapı
+
+- YSA'lar genellikle üç tür katmandan oluşur:
+  1. **Girdi Katmanı:** Verilerin ağa girdiği katmandır.
+  2. **Gizli Katmanlar:** Girdi verilerini işleyen ve bir sonraki katmana ileten katmanlardır. Birden fazla gizli katman olabilir.
+  3. **Çıktı Katmanı:** Ağın sonucunu ürettiği katmandır.
+
+## 3. Çalışma Prensibi
+
+- YSA'lar, ileri besleme (forward propagation) ve geri yayılım (backpropagation) adı verilen iki temel işlemle çalışır.
+
+### 3.1. İleri Besleme
+
+- İleri beslemede, girdi verileri ağın katmanları boyunca ilerler ve her katmanda ağırlıklarla çarpılıp toplanır.
+- Bu işlem, çıktı katmanına ulaşana kadar devam eder ve ağın tahmini üretilir.
+
+### 3.2. Geri Yayılım (Backpropagation)
+
+- Geri yayılımda, modelin tahmini ile gerçek değer arasındaki fark (hata) hesaplanır ve bu hata, ağırlıkları güncellemek için ağa geri iletilir.
+- Bu işlem, modelin öğrenmesini ve daha doğru tahminler yapmasını sağlar.
+
+## 4. Aktivasyon Fonksiyonları
+
+- Aktivasyon fonksiyonları, YSA'ların doğrusal olmayan ilişkileri öğrenmesini sağlar.
+- Yaygın olarak kullanılan aktivasyon fonksiyonları şunlardır:
+  - **Sigmoid:** Çıktıyı 0 ile 1 arasında bir değere sıkıştırır.
+  - **ReLU (Rectified Linear Unit):** Negatif değerleri sıfır yapar, pozitif değerleri olduğu gibi bırakır.
+  - **Softmax:** Çok sınıflı sınıflandırma problemlerinde çıktıları olasılıklara dönüştürür.
+
+## 5. MNIST Veri Seti
+
+- MNIST, el yazısı rakamlarının görüntülerinden oluşan bir veri setidir.
+- YSA'lar, MNIST veri setini kullanarak el yazısı rakamlarını tanımayı öğrenebilir.
+
+## 6. Özet
+
+- Yapay sinir ağları, karmaşık problemleri çözmek için güçlü bir araçtır.
+- İleri besleme, geri yayılım ve aktivasyon fonksiyonları gibi mekanizmalar sayesinde YSA'lar, verilerden öğrenebilir ve daha doğru tahminler yapabilir.
+
+# Veri Bilimi - 9. Ders
+
+## Dosya Yolu
+Dosya yolu, dosyaların bilgisayardaki konumunu belirten adrestir.
+
+## SVM (Support Vector Machine)
+SVM, verileri sınıflandırmak için kullanılan bir algoritmadır.
+
+## Confusion Matrix
+Confusion Matrix, bir sınıflandırma modelinin performansını değerlendirmek için kullanılan bir tablodur.
+
+## Fonksiyon
+Fonksiyon, belirli bir görevi yerine getiren kod bloğudur.
+
+## GitHub
+GitHub, kod paylaşımı ve versiyon kontrol platformudur.
+
+## Colab
+Google Colaboratory, bulut tabanlı bir Python kodlama ortamıdır.
+
+## Backpropagation
+Backpropagation, yapay sinir ağlarında öğrenme için kullanılan bir algoritmadır.
+
+## Ağırlıklar (w1, w2)
+Ağırlıklar, yapay sinir ağlarında nöronlar arasındaki bağlantıların gücünü temsil eden değerlerdir.
+
+# Yapay Sinir Ağları ve Backpropagation
+Yapay sinir ağları (YSA), insan beyninin bilgi işleme şeklini taklit eden bir hesaplama modelidir. YSA'lar, birbirine bağlı birçok işlem biriminden (nöron) oluşur ve bu birimler arasındaki bağlantılar ağırlıklarla temsil edilir. Bu ağırlıklar, ağın öğrenme sürecinde ayarlanır ve ağın girdi verilerine nasıl tepki vereceğini belirler.
+
+Backpropagation, YSA'ların öğrenme sürecinde kullanılan bir algoritmadır. Bu algoritma, modelin tahmini ile gerçek değer arasındaki farkı (hatayı) hesaplar ve bu hatayı, ağırlıkları güncellemek için ağa geri iletir. Bu işlem, modelin öğrenmesini ve daha doğru tahminler yapmasını sağlar.
+
+## Özet
+- Yapay sinir ağları, karmaşık problemleri çözmek için güçlü bir araçtır.
+- Backpropagation algoritması, YSA'ların öğrenme sürecinde önemli bir rol oynar.
+- Ağırlıklar, YSA'ların performansını etkileyen önemli parametrelerdir.
+
+# Veri Bilimi - 10. Ders
+
+## Backpropagation
+Backpropagation (Geri Yayılım), sinir ağlarında öğrenme için kullanılan bir algoritmadır. Bu algoritma, modelin tahmini ile gerçek değer arasındaki farkı (hatayı) hesaplar ve bu hatayı kullanarak modelin parametrelerini (ağırlıklar ve biaslar) günceller. Bu işlem, modelin öğrenmesini ve daha doğru tahminler yapmasını sağlar.
+
+## Hatalar
+- Hatanın nasıl düzeltileceği önemlidir.
+- Hatanın tüm hücrelere eşit olarak dağıtılması, toplam hatanın düzeltilmesini sağlayabilir.
+- En büyük hataya sahip hücrenin kendini düzeltmesi de bir seçenektir.
+- Hatanın ağırlığının tek bir hücreye atanması da mümkündür.
+- İdeal olarak, hataya neden olan hücre veya hücreler hatayı çözmelidir.
+
+## Türev
+Türev, bir fonksiyonun belirli bir noktadaki değişim oranını ölçer. Def (tanımlama) ve return (döndürme) ifadeleri kullanılarak fonksiyonlar tanımlanır ve bu fonksiyonların değişim oranları türev kullanılarak hesaplanabilir.
+
+## Veri Bulma ve Koşullar
+- Veri bulmak ve koşullar oluşturmak, backpropagation algoritmasında önemlidir.
+- Döngüler, belirli koşullar sağlandığı sürece tekrarlanan işlemler yapmak için kullanılır.
+
+## Ödev
+- Potansiyel müşteri risk uyarısı oluşturulacak bir sistem üzerine çalışma.
+- En az 1000 veri kullanılacak ve %5'lik veri kendimiz oluşturulup hazır verinin içine yerleştirilecek.
+
+# TensorFlow - Yapay Sinir Ağları
+- TensorFlow, Google tarafından geliştirilen açık kaynaklı bir derin öğrenme kütüphanesidir.
+- Yapay sinir ağları oluşturmak ve eğitmek için kullanılabilir.
+- Return ifadesinden sonra yazılan kodlar ölü koddur ve çalıştırılmaz.
+- Break ve continue ifadeleri de ölü kodlara neden olabilir.
+- Koşulsuz break ifadesi anlamsızdır.
+
+## Ödev
+- Yapılması planlanan projenin planı ve özeti GitHub'a yüklenecek.
+- Süreci anlatan bir yazı haritalandırma yapmak.
+
+# Detaylı Backpropagation Anlatımı
+Backpropagation, sinir ağlarında öğrenme için kullanılan bir algoritmadır. Bu algoritma, modelin tahmini ile gerçek değer arasındaki farkı (hatayı) hesaplar ve bu hatayı kullanarak modelin parametrelerini (ağırlıklar ve biaslar) günceller. Bu işlem, modelin öğrenmesini ve daha doğru tahminler yapmasını sağlar.
+
+## Örnek İşlemler ve Matrisler
+Aşağıda, basit bir sinir ağı üzerinde backpropagation algoritmasının nasıl çalıştığını gösteren bir örnek verilmiştir.
+
+### Girdi Katmanı:
+- i1 = 0.5
+- i2 = 0.3
+
+### Gizli Katman:
+- w1 = 0.701
+- w2 = 0.4011
+- b1 = 0.2
+
+### Çıkış Katmanı:
+- w3 = 0.8
+- w4 = 0.6
+- b2 = 0.1
+
+### Aktivasyon Fonksiyonu: Sigmoid
+### Kayıp Fonksiyonu: Mean Squared Error (MSE)
+### Öğrenme Oranı: 0.1
+
+### Adımlar:
+1. **İleri Besleme:**
+   - Gizli katman nöronlarının toplam girdisi:
+     - z1 = (i1 * w1) + (i2 * w3) + b1 = (0.5 * 0.701) + (0.3 * 0.8) + 0.2 = 0.7905
+     - z2 = (i1 * w2) + (i2 * w4) + b1 = (0.5 * 0.4011) + (0.3 * 0.6) + 0.2 = 0.58055
+   - Gizli katman nöronlarının çıktısı (sigmoid uygulanarak):
+     - h1 = sigmoid(z1) = 1 / (1 + exp(-0.7905)) = 0.687
+     - h2 = sigmoid(z2) = 1 / (1 + exp(-0.58055)) = 0.641
+   - Çıkış katmanı nöronunun toplam girdisi:
+     - z3 = (h1 * w3) + (h2 * w4) + b2 = (0.687 * 0.8) + (0.641 * 0.6) + 0.1 = 1.0342
+   - Çıkış katmanı nöronunun çıktısı (sigmoid uygulanarak):
+     - o = sigmoid(z3) = 1 / (1 + exp(-1.0342)) = 0.737
+
+2. **Hata Hesaplama (MSE):**
+   - MSE = (o - y)^2 = (0.737 - 1)^2 = 0.069 (y = 1, gerçek değer)
+
+3. **Geri Yayılım:**
+   - Çıkış katmanı ağırlıklarının gradyanı:
+     - ∂MSE/∂w3 = ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂w3 = 2(o - y) * o(1 - o) * h1 = 2(0.737 - 1) * 0.737(1 - 0.737) * 0.687 = -0.117
+     - ∂MSE/∂w4 = ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂w4 = 2(o - y) * o(1 - o) * h2 = 2(0.737 - 1) * 0.737(1 - 0.737) * 0.641 = -0.103
+   - Çıkış katmanı biasının gradyanı:
+     - ∂MSE/∂b2 = ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂b2 = 2(o - y) * o(1 - o) * 1 = 2(0.737 - 1) * 0.737(1 - 0.737) * 1 = -0.130
+   - Gizli katman ağırlıklarının gradyanı:
+     - ∂MSE/∂w1 = ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂h1 * ∂h1/∂z1 * ∂z1/∂w1 = 2(o - y) * o(1 - o) * w3 * h1(1 - h1) * i1 = 2(0.737 - 1) * 0.737(1 - 0.737) * 0.8 * 0.687(1 - 0.687) * 0.5 = -0.010
+     - ∂MSE/∂w2 = ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂h2 * ∂h2/∂z2 * ∂z2/∂w2 = 2(o - y) * o(1 - o) * w4 * h2(1 - h2) * i1 = 2(0.737 - 1) * 0.737(1 - 0.737) * 0.6 * 0.641(1 - 0.641) * 0.5 = -0.006
+   - Gizli katman biasının gradyanı:
+     - ∂MSE/∂b1 = ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂h1 * ∂h1/∂z1 * ∂z1/∂b1 + ∂MSE/∂o * ∂o/∂z3 * ∂z3/∂h2 * ∂h2/∂z2 * ∂z2/∂b1 = 2(o - y) * o(1 - o) * w3 * h1(1 - h1) * 1 + 2(o - y) * o(1 - o) * w4 * h2(1 - h2) * 1 = 2(0.737 - 1) * 0.737(1 - 0.737) * 0.8 * 0.687(1 - 0.687) * 1 + 2(0.737 - 1) * 0.737(1 - 0.737) * 0.6 * 0.641(1 - 0.641) * 1 = -0.020
+
+4. **Ağırlık Güncelleme:**
+   - Çıkış katmanı ağırlıkları:
+     - w3 = w3 - (öğrenme oranı * ∂MSE/∂w3) = 0.8 - (0.1 * -0.117) = 0.812
+     - w4 = w4 - (öğrenme oranı * ∂MSE/∂w4) = 0.6 - (0.1 * -0.103) = 0.610
+   - Çıkış katmanı biası:
+     - b2 = b2 - (öğrenme oranı * ∂MSE/∂b2) = 0.1 - (0.1 * -0.130) = 0.113
+   - Gizli katman ağırlıkları:
+     - w1 = w1 - (öğrenme oranı * ∂MSE/∂w1) = 0.701 - (0.1 * -0.010) = 0.702
+     - w2 = w2 - (öğrenme oranı * ∂MSE/∂w2) = 0.4011 - (0.1 * -0.006) = 0.4017
+   - Gizli katman biası:
+     - b1 = b1 - (öğrenme oranı * ∂MSE/∂b1) = 0.2 - (0.1 * -0.020) = 0.202
+
+
+```markdown
+# Veri Bilimi - 11. Ders
+
+## Konular:
+- **Proje İncelemeleri**
+- **İnsan Kaynakları ve Müşteri Analizi**
+- **Eksik Konular**
+- **Kayıp Fonksiyonu (Loss Function)**
 
 ### Proje İncelemeleri
-- **İnsan Kaynakları ve Müşteri Analizi:** Çalışan verileri ve müşteri verileri üzerinde analizler yapılabilir.
-- **Kayıp Fonksiyonu (Loss Function):** Modelin tahminlerinin gerçek değerlerden ne kadar uzak olduğunu ölçer.
+- On farklı veri bilimi projesi incelenecek.
+- Projelerin konuları insan kaynakları ve müşteri analizi odaklı olacak.
+- Her proje için bir doküman hazırlanacak ve notlar alınacak.
+- Eksik konular tespit edilecek.
+
+### İnsan Kaynakları ve Müşteri Analizi
+- **İnsan kaynakları projeleri**, çalışan verilerini kullanarak performans analizi, çalışan memnuniyeti, yetenek yönetimi gibi konuları ele alabilir.
+- **Müşteri analizi projeleri**, müşteri verilerini kullanarak müşteri segmentasyonu, churn analizi, müşteri yaşam boyu değeri gibi konuları ele alabilir.
+
+### Eksik Konular
+- Proje incelemeleri sırasında eksik konular tespit edilecek ve notlar alınacak.
+- Bu eksik konular, daha sonra detaylı olarak araştırılacak ve öğrenilecek.
+
+### Kayıp Fonksiyonu (Loss Function)
+- Kayıp fonksiyonu, modelin tahminlerinin gerçek değerlerden ne kadar uzak olduğunu ölçer.
+- Bu fonksiyon, modelin öğrenme sürecinde optimize edilir.
+- **Örnek Python kodu:**
+  ```python
+  def loss_or_count_error(y_expected, y_predicted):
+      return (y_expected - y_predicted)**2
+  ```
+  Bu fonksiyon, ortalama karesel hata (MSE) kayıp fonksiyonunu temsil eder.
 
 ---
 
-## 12. Ders: Derin Öğrenme ve Arayüz Oluşturma
+# Veri Bilimi - 12. Ders
+
+## CNN (Evrişimli Sinir Ağları)
+- **Görüntü Ölçekleme:** Bir görüntüyü yeniden boyutlandırırken, kareler arası seçimleri çok fazla bozmadan istenen görüntüye ulaşmak için dikkatli olunmalıdır. Örneğin, 6x3 boyutundaki bir görüntüyü 2x1 boyutuna ölçeklemek, görüntünün önemli özelliklerini kaybetmeden boyutunu küçültmeye yardımcı olabilir.
+- **Min. Pooling:** En küçük değerleri seçerek görüntünün boyutunu küçültür. Bu işlem, görüntünün en önemli özelliklerini korurken boyutunu küçültmeye yardımcı olur.
+- **Büyütme:** Görüntüyü büyütmek için kopyala-yapıştır yöntemi kullanılabilir. Bu yöntem, görüntünün çözünürlüğünü artırmak için kullanılabilir.
+
+### Loss Hesaplama ve Model Eğitimi
+- **Loss Hesaplama:** Modelin tahminleri ile gerçek değerler arasındaki farkı ölçer. Backpropagation algoritması kullanılarak hesaplanır.
+- **Good Fit:** Modelin eğitim verilerine iyi uyum sağlamasıdır. Loss değeri belli bir miktarın altına düştüğünde, modelin good fit olduğu kabul edilebilir.
+- **Overfitting:** Modelin eğitim verilerine aşırı uyum sağlamasıdır. Overfitting, modelin yeni verilere genelleme yeteneğini azaltır.
+
+### TensorFlow
+- **Interpreted Dil:** Python gibi yorumlanan diller, kodları satır satır çalıştırır. Bu, yorumlanan dilleri derlenen dillere göre daha yavaş hale getirir.
+- **Compiled Dil:** C++ gibi derlenen diller, kodları makine diline çevirir ve daha sonra çalıştırır. Bu, derlenen dilleri yorumlanan dillere göre daha hızlı hale getirir.
+- **TensorFlow, PyTorch, Scikit-learn:** Makine öğrenmesi için kullanılan popüler kütüphanelerdir. Bu kütüphaneler, modelleri eğitmek ve dağıtmak için araçlar sağlar.
+- **Model Kaydetme:** Eğitilen bir modeli kaydetmek, modeli daha sonra tekrar kullanmayı sağlar.
+- **Model Yükleme:** Kaydedilen bir modeli yüklemek, modeli tekrar eğitmeden kullanmayı sağlar.
 
 ### Derin Öğrenme
-- **Derin Öğrenme:** Makine öğrenmesinin bir alt alanıdır ve yapay sinir ağlarını kullanarak verilerden karmaşık örüntüleri öğrenir.
+- **Float64:** 64 bitlik bir rasyonel sayı veri türüdür. Derin öğrenme modellerinde yüksek hassasiyet gerektiren hesaplamalar için kullanılır.
+- **TensorFlow.js:** Web tarayıcılarında TensorFlow modellerini çalıştırmak için kullanılır.
+- **TensorFlow Lite:** Mobil ve gömülü cihazlarda TensorFlow modellerini çalıştırmak için kullanılır.
+- **32 bit vs. 64 bit:** 32 bitlik modeller, 64 bitlik modellere göre daha az hassasiyete sahiptir.
+- **Compile (Derlemek):** Kodu makine diline çevirmektir.
+- **Conv2D:** Evrişimli katman, görüntü verilerini işlemek için kullanılır.
+- **MaxPooling2D:** Maksimum havuzlama katmanı, görüntünün boyutunu küçültmek için kullanılır.
+- **Flatten:** Çok boyutlu verileri tek boyutlu hale getirmek için kullanılır.
+- **Dense:** Tam bağlantılı katman, sinir ağındaki tüm nöronları birbirine bağlar.
+- **Optimizer (Adam):** Modelin ağırlıklarını güncellemek için kullanılan bir algoritmadır.
+- **CPU vs. GPU:** GPU'lar, CPU'lara göre derin öğrenme hesaplamalarında daha hızlıdır.
 
-### Arayüz Oluşturma
+### Ödev:
+- TFX, TensorFlow.js ve TensorFlow Lite'ı inceleyin.
+- Modeli fit etmeden kaydedin.
+- Model hakkında bilgi edinmek için `model.summary` komutunu kullanın.
+
+---
+
+# Veri Bilimi - 13. Ders
+
+## Derin Öğrenme
+- Derin öğrenme, makine öğrenmesinin bir alt alanıdır ve yapay sinir ağlarını kullanarak verilerden karmaşık örüntüleri öğrenir.
+- Derin öğrenme modelleri, büyük veri kümeleri ve karmaşık problemlerle başa çıkabilir.
+- Görüntü işleme, doğal dil işleme ve ses tanıma gibi alanlarda kullanılır.
+
+### Arayüz Oluşturma Platformları
 - **Streamlit:** Veri bilimi projeleri için etkileşimli web arayüzleri oluşturmak için kullanılır.
 - **Gradio:** Makine öğrenimi modelleri için hızlı ve kolay bir şekilde arayüzler oluşturmak için kullanılır.
 
+### RHLF (Reinforcement Learning with Human Feedback)
+- RHLF, insanlardan alınan geri bildirimlerle öğrenen bir pekiştirmeli öğrenme yöntemidir.
+- Bu yöntem, insanların tercihlerini ve beklentilerini öğrenerek daha iyi modeller oluşturmayı amaçlar.
+
+### CV2 (OpenCV)
+- OpenCV, görüntü işleme ve bilgisayar görüşü için kullanılan açık kaynaklı bir kütüphanedir.
+- `pip install opencv-python` komutu ile kurulabilir.
+
+### Docker
+- Docker, yazılımları ve bağımlılıklarını izole bir ortamda çalıştırmak için kullanılan bir platformdur.
+- Python'ın farklı versiyonlarını ve kütüphanelerini yönetmek için kullanılabilir.
+- Docker, yazılımın taşınabilirliğini ve tekrarlanabilirliğini artırır.
+
+### Docker Konteyner
+- Docker konteyner, yazılımı ve bağımlılıklarını içeren izole bir çalışma ortamıdır.
+- `docker run` komutu ile çalıştırılabilir.
+
+### requirements.txt
+- `requirements.txt`, bir projede kullanılan Python kütüphanelerinin listesini içeren bir dosyadır.
+- `pip install -r requirements.txt` komutu ile bu kütüphaneler kurulabilir.
+
+### Hugging Face
+- Hugging Face, doğal dil işleme (NLP) modelleri ve veri kümeleri için bir platformdur.
+- **Space kısmı**, modelleri ve demoları paylaşmak için kullanılabilir.
+
+### Görev
+- Hugging Face'te space kısmını kullanarak bir proje oluşturun ve linkini paylaşın.
+- Gradio, Streamlit ve ZeroGPU gibi arayüz oluşturma platformlarını inceleyin.
+
 ---
 
-## 13. Ders: Firebase ve TensorFlow.js
+# Veri Bilimi - 14. Ders
 
-### Firebase
-- **Firebase:** Google tarafından geliştirilen bir mobil ve web uygulaması geliştirme platformudur.
-- **Firebase ile Web Sitesi Oluşturma:** Firebase konsolunda proje oluşturma ve dağıtım işlemleri.
+## Firebase
+- Firebase, Google tarafından geliştirilen bir mobil ve web uygulaması geliştirme platformudur.
+- Veritabanı, kimlik doğrulama, depolama, mesajlaşma gibi birçok hizmet sunar.
+- Firebase'i kullanarak web siteleri oluşturmak mümkündür.
 
-### TensorFlow.js
-- **TensorFlow.js:** JavaScript ile makine öğrenmesi modelleri oluşturmak ve eğitmek için kullanılan bir kütüphanedir.
+### Firebase ile Web Sitesi Oluşturma
+1. Firebase konsoluna gidin: [https://console.firebase.google.com/u/0/](https://console.firebase.google.com/u/0/)
+2. Yeni bir proje oluşturun.
+3. Projeyi adlandırın ve bir domain adı seçin (örneğin, `name.web.app`).
+4. Devam edin ve varsayılan ayarları seçin.
+5. VS Code'da yeni bir klasör oluşturun (örneğin, `firebase_javascript`).
+6. Klasörü VS Code'da açın ve entegre terminali açın.
+7. Terminalde `firebase init` komutunu çalıştırın ve hosting seçeneğini seçin.
+8. Node.js'i indirin ve kurun.
+9. VS Code terminalinde `npm install -g firebase-tools` komutunu çalıştırın.
+10. Firebase'e giriş yapın: `firebase login`.
+11. Projeyi başlatın: `firebase init`.
+12. Firestore veritabanını seçin ve test modunda başlatın.
+13. JavaScript seçeneğini seçin ve public directory olarak `public` klasörünü belirtin.
+14. Single-page-app seçeneğini seçin ve GitHub entegrasyonunu devre dışı bırakın.
+```
